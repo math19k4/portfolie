@@ -1,0 +1,504 @@
+/****** generelle instillinger***/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img video {
+    width: 100%;
+}
+
+
+
+
+/***** menu******/
+
+/**selve menu**/
+nav {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-bottom: 1px solid black;
+    font-size: 1em;
+    font-style: normal;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 6px;
+    color: black;
+    transition: 0.2s;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: inherit;
+    border: 1px solid white;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/****mus over link**/
+nav a:hover {
+    text-decoration: none;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: white;
+    background-color: black;
+
+}
+
+#top {}
+
+
+@media only screen and (min-width:900px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+
+
+/******Forside***/
+#forside {
+    background-image: url(palme.png);
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: 45% 10%;
+
+
+}
+
+/*
+@media (orientation:portrait) and (min-width: 600px) {
+
+    #splash {
+        width: 100%;
+        height: 56.25vh;
+    }
+
+}
+*/
+
+/*****tekst forside*****/
+
+h10 {
+    font-family: 'Muli', sans-serif;
+    font-size: 4em;
+    background-color: white;
+    font-weight: bold;
+    border: white;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 650px;
+    height: 105px;
+    text-align: center;
+    position: fixed;
+    left: 400px;
+    top: 250px;
+    flex-wrap: wrap;
+
+
+}
+
+h11 {
+    font-family: 'Muli', sans-serif;
+    font-size: 2em;
+    background-color: white;
+    font-weight: bold;
+    border: white;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 600px;
+    top: 400px;
+}
+
+h12 {
+    font-family: 'Muli', sans-serif;
+    font-size: 2em;
+    background-color: white;
+    font-weight: bold;
+    border: white;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 600px;
+    top: 200px;
+}
+
+h4 {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: white;
+    /*
+    background-color: black;
+    color: white;*/
+
+    margin-left: 4px;
+    margin-right: 4px;
+
+    width: 150px;
+    height: 50px;
+    text-align: left;
+    position: absolute;
+
+    /*
+    left: 900px;
+    top: 200px;
+*/
+
+}
+
+h2 {
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    border: white;
+    margin-left: 10px;
+    /*
+    margin-right: 4px;
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+*/
+    /*    text-align: left;*/
+    position: absolute;
+}
+
+h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 0.5em;
+    font-weight: bold;
+    border: white;
+
+    margin-left: 10px;
+    margin-right: 4px;
+
+    width: 250px;
+    height: 50px;
+    text-align: left;
+    position: absolute;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+/*
+*****portfolie**
+
+#Portfolie {
+
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: 45% 10%;
+    margin: 0rem;
+
+}
+
+.col1_portfolie {
+    background-image: url(02.png);
+    height: 400px;
+    width: 900px;
+    background-size: cover;
+    left: 200vw;
+    flex-wrap: wrap;
+    font-family: 'Muli', sans-serif;
+    font-size: 2em;
+    background-color: white;
+    font-weight: 450;
+    border: white;
+}
+
+.col2_portfolie {
+    background-image: url(03.png);
+    height: 400px;
+    width: 900px;
+    background-size: cover;
+    flex-wrap: wrap;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5em;
+    background-color: white;
+    font-weight: 450;
+    border: white;
+    color: white;
+    background-color: white;
+}
+
+
+.col3_portfolie {
+    background-image: url(04.png);
+    height: 400px;
+    width: 900px;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.col4_portfolie {
+    background-image: url(05.png);
+    height: 400px;
+    width: 900px;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+#portfolie .sectionwrapper {
+    justify-content: center;
+}
+
+
+
+
+
+
+#portfolio img:hover {
+    transition: .5s ease;
+    transform: scale(1.07);
+}
+
+*/
+
+
+/*****om mig***/
+
+
+#om {
+    padding: 20px;
+    margin: 20px;
+}
+
+
+#om .image {
+    flex-grow: 1;
+    flex-basis: 260px;
+    height: 60vw;
+    width: 30vw;
+
+
+}
+
+
+
+#om .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 6px;
+    margin: 6px;
+    background-color: #DFD5D5;
+}
+
+#om .col_1 {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 6px;
+    margin: 6px;
+    background-color: #DFD5D5;
+    height: 50vw;
+    width: 50vw;
+}
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    top: auto;
+}
+
+
+
+
+
+
+/******02 html*****/
+
+
+#web {
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#web .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    top: auto;
+}
+
+#web .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 6px;
+    margin: 6px;
+    background-color: #DFD5D5;
+
+
+
+}
+
+#web .image {
+    flex-grow: 1;
+    flex-basis: 260px;
+}
+
+
+
+/********grundlæggende ux****/
+
+
+embed {
+    width: 620px;
+    height: 750px;
+
+}
+
+#ux {
+    padding: 20px;
+    margin: 20px;
+}
+
+
+#ux .image {
+    flex-grow: 1;
+    flex-basis: 260px;
+    position: relative;
+    background-color: white;
+
+
+
+
+}
+
+
+#ux .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 6px;
+    margin: 6px;
+    background-color: #DFD5D5;
+    top: 20px;
+
+}
+
+#ux .col_1 {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+
+
+#ux .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    top: auto;
+}
+
+/****** animation*****/
+
+
+#animation {
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#animation .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    top: auto;
+}
+
+#animation .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 6px;
+    margin: 6px;
+    background-color: #DFD5D5;
+
+
+
+}
+
+#animation .image {
+    flex-grow: 1;
+    flex-basis: 260px;
+}
+
+
+/******indhold*****/
+#indhold {
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#indhold .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    top: auto;
+}
+
+#indhold .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 6px;
+    margin: 6px;
+    background-color: #DFD5D5;
+
+
+
+}
+
+#indhold .image {
+    flex-grow: 1;
+    flex-basis: 260px;
+}
